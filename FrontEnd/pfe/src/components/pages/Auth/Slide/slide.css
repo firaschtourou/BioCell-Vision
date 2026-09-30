@@ -1,0 +1,17 @@
+.Slide-container {
+  display: absolute;
+  height: 100px; /* toute la hauteur de la fenêtre */
+    margin: 0;
+  padding: 0;
+  height: 100%;
+ 
+}
+/* Partie image à droite */
+.Slide-container img {
+  flex: 1; /* occupe la moitié droite */
+  object-fit: cover;
+ margin-left: 324px;
+  height: 101vh;
+  
+  
+}

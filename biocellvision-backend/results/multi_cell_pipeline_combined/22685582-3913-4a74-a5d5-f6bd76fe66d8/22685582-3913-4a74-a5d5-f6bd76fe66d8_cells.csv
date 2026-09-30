@@ -1,0 +1,2 @@
+anomaly_confidence,anomaly_type,area,cell_id,confidence,crop_path,isolated_path,mask_path,predicted_class,state,x1,x2,y1,y2
+0.8544,degranulation,1412,1,0.6109825372695923,results/multi_cell_pipeline_combined/22685582-3913-4a74-a5d5-f6bd76fe66d8/cells/cell_001_crop.png,results/multi_cell_pipeline_combined/22685582-3913-4a74-a5d5-f6bd76fe66d8/cells/cell_001_isolated.png,results/multi_cell_pipeline_combined/22685582-3913-4a74-a5d5-f6bd76fe66d8/cells/cell_001_mask.png,basophil,Anormale,149,212,144,211

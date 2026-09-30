@@ -1,0 +1,19 @@
+{
+  "num_cells": 1,
+  "cells": [
+    {
+      "cell_id": 1,
+      "bbox": [
+        118,
+        112,
+        250,
+        255
+      ],
+      "predicted_class": "segmented_neutrophil",
+      "confidence": 0.733362078666687,
+      "state": "Anormale",
+      "anomaly_type": "granulations_toxiques",
+      "anomaly_confidence": 0.7533
+    }
+  ]
+}

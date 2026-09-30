@@ -1,0 +1,2 @@
+anomaly_confidence,anomaly_type,area,cell_id,confidence,crop_path,isolated_path,mask_path,predicted_class,state,x1,x2,y1,y2
+0.5987,cytoplasme_basophile,4065,1,0.9987456798553467,results/multi_cell_pipeline_combined/87622772-69ee-4927-b4c8-98dc66d44c9d/cells/cell_001_crop.png,results/multi_cell_pipeline_combined/87622772-69ee-4927-b4c8-98dc66d44c9d/cells/cell_001_isolated.png,results/multi_cell_pipeline_combined/87622772-69ee-4927-b4c8-98dc66d44c9d/cells/cell_001_mask.png,lymphocyte,Anormale,142,237,130,222

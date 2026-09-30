@@ -1,0 +1,2 @@
+anomaly_confidence,anomaly_type,area,cell_id,confidence,crop_path,isolated_path,mask_path,predicted_class,state,x1,x2,y1,y2
+0.3188,,2944,1,0.9617246985435486,results/multi_cell_pipeline_combined/f75ee9ac-62cd-471e-93ed-d576b64aebda/cells/cell_001_crop.png,results/multi_cell_pipeline_combined/f75ee9ac-62cd-471e-93ed-d576b64aebda/cells/cell_001_isolated.png,results/multi_cell_pipeline_combined/f75ee9ac-62cd-471e-93ed-d576b64aebda/cells/cell_001_mask.png,promyelocyte,Anormale,139,224,145,222

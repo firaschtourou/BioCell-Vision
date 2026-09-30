@@ -1,0 +1,2 @@
+anomaly_confidence,anomaly_type,area,cell_id,confidence,crop_path,isolated_path,mask_path,predicted_class,state,x1,x2,y1,y2
+0.7398,granulations_toxiques,9370,1,0.9209471344947815,results/multi_cell_pipeline_combined/97e192e2-706b-4386-952e-bacceb6889ff/cells/cell_001_crop.png,results/multi_cell_pipeline_combined/97e192e2-706b-4386-952e-bacceb6889ff/cells/cell_001_isolated.png,results/multi_cell_pipeline_combined/97e192e2-706b-4386-952e-bacceb6889ff/cells/cell_001_mask.png,band_neutrophil,Anormale,108,242,103,268

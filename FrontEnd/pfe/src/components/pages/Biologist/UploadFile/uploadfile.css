@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.upload-page-bio {
+  display: flex;
+  min-height: 100vh;
+  background: #F5F7F6;
+}
+
+.upload-main-bio {
+  flex: 1;
+  margin-left: 280px;
+  padding: 30px 40px;
+}
+
+.upload-header-bio {
+  margin-bottom: 30px;
+}
+
+.upload-header-bio h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+}
+
+.upload-subtitle-bio {
+  color: #666;
+  font-size: 1rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.upload-content-bio {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.upload-card-bio {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  animation: fadeIn-bio 0.4s ease-out;
+}
+
+.card-header-bio {
+  margin-bottom: 20px;
+}
+
+.card-header-bio h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+}
+
+.card-header-bio h2 svg {
+  color: #1E8F47;
+}
+
+.card-header-bio p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Drag & Drop */
+.dropzone-bio {
+  min-height: 480px;
+  border: 2px dashed rgba(30, 143, 71, 0.25);
+  border-radius: 18px;
+  background: #FAFCFB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dropzone-bio:hover {
+  border-color: #2DBE60;
+  background: #F4FBF7;
+}
+
+.dropzone-bio.dragging-bio {
+  border-color: #1E8F47;
+  background: rgba(45, 190, 96, 0.08);
+  transform: scale(1.01);
+}
+
+.dropzone-bio.has-preview-bio {
+  padding: 14px;
+  background: #FFFFFF;
+}
+
+.hidden-input-bio {
+  display: none;
+}
+
+.dropzone-placeholder-bio {
+  text-align: center;
+  max-width: 420px;
+}
+
+.dropzone-icon-bio {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(45, 190, 96, 0.1);
+  color: #1E8F47;
+  font-size: 2.2rem;
+}
+
+.dropzone-placeholder-bio h3 {
+  font-size: 1.3rem;
+  color: #1A1A1A;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.dropzone-placeholder-bio p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.dropzone-hint-bio {
+  display: inline-block;
+  background: rgba(45, 190, 96, 0.1);
+  color: #1E8F47;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.preview-wrapper-bio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.preview-image-bio {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(30, 143, 71, 0.12);
+}
+
+.preview-info-bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.preview-meta-bio {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.preview-file-bio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.preview-file-bio svg {
+  color: #1E8F47;
+  font-size: 1.2rem;
+}
+
+.preview-file-bio strong {
+  display: block;
+  color: #1A1A1A;
+  font-size: 0.95rem;
+  margin-bottom: 3px;
+}
+
+.preview-file-bio span {
+  color: #666;
+  font-size: 0.88rem;
+}
+
+.preview-valid-bio {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(45, 190, 96, 0.1);
+  color: #1E8F47;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.remove-image-btn-bio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: rgba(211, 47, 47, 0.08);
+  color: #D32F2F;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.remove-image-btn-bio:hover {
+  background: rgba(211, 47, 47, 0.15);
+}
+
+.file-error-bio {
+  margin-top: 14px;
+  color: #D32F2F;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Form */
+.analysis-form-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group-bio label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1A1A1A;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group-bio label svg {
+  color: #1E8F47;
+}
+
+.form-group-bio input,
+.form-group-bio select,
+.form-group-bio textarea {
+  width: 100%;
+  border: 1px solid rgba(30, 143, 71, 0.18);
+  background: #FAFCFB;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 0.96rem;
+  color: #1A1A1A;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group-bio input:focus,
+.form-group-bio select:focus,
+.form-group-bio textarea:focus {
+  border-color: #2DBE60;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(45, 190, 96, 0.10);
+}
+
+.form-group-bio textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group-bio input::placeholder,
+.form-group-bio textarea::placeholder {
+  color: #999;
+}
+
+.launch-btn-bio {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  border-radius: 14px;
+  padding: 15px 18px;
+  background: linear-gradient(135deg, #2DBE60, #1E8F47);
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.launch-btn-bio:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 143, 71, 0.18);
+}
+
+.launch-btn-bio:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .upload-content-bio {
+    grid-template-columns: 1fr;
+  }
+
+  .dropzone-bio {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .upload-main-bio {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upload-header-bio h1 {
+    font-size: 1.7rem;
+  }
+
+  .upload-card-bio {
+    padding: 18px;
+  }
+
+  .dropzone-bio {
+    min-height: 340px;
+    padding: 18px;
+  }
+
+  .preview-image-bio {
+    height: 240px;
+  }
+
+  .preview-info-bio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn-bio {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

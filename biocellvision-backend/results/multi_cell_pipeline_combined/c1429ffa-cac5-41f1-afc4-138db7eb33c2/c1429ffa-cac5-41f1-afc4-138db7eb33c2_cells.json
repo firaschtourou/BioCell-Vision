@@ -1,0 +1,89 @@
+{
+  "num_cells": 6,
+  "cells": [
+    {
+      "cell_id": 1,
+      "bbox": [
+        854,
+        231,
+        935,
+        307
+      ],
+      "predicted_class": "promyelocyte",
+      "confidence": 0.9001248478889465,
+      "state": "Anormale",
+      "anomaly_type": null,
+      "anomaly_confidence": 0.4067
+    },
+    {
+      "cell_id": 2,
+      "bbox": [
+        345,
+        292,
+        443,
+        395
+      ],
+      "predicted_class": "promyelocyte",
+      "confidence": 0.6680387854576111,
+      "state": "Anormale",
+      "anomaly_type": null,
+      "anomaly_confidence": 0.4293
+    },
+    {
+      "cell_id": 3,
+      "bbox": [
+        697,
+        364,
+        782,
+        453
+      ],
+      "predicted_class": "lymphocyte",
+      "confidence": 0.9390212297439575,
+      "state": "Normale",
+      "anomaly_type": null,
+      "anomaly_confidence": 0.9669
+    },
+    {
+      "cell_id": 4,
+      "bbox": [
+        577,
+        430,
+        673,
+        518
+      ],
+      "predicted_class": "monocyte",
+      "confidence": 0.852016270160675,
+      "state": "Normale",
+      "anomaly_type": null,
+      "anomaly_confidence": 0.5789
+    },
+    {
+      "cell_id": 5,
+      "bbox": [
+        219,
+        570,
+        303,
+        653
+      ],
+      "predicted_class": "lymphocyte",
+      "confidence": 0.8967414498329163,
+      "state": "Normale",
+      "anomaly_type": null,
+      "anomaly_confidence": 0.5769
+    },
+    {
+      "cell_id": 6,
+      "bbox": [
+        54,
+        615,
+        135,
+        692
+      ],
+      "predicted_class": "lymphocyte",
+      "confidence": 0.9407647252082825,
+      "state": "Normale",
+      "anomaly_type": null,
+      "anomaly_confidence": 0.8767
+    }
+  ]
+}
